@@ -1,17 +1,9 @@
 body{
     padding: 0;
     margin: 0;
-}
-.header{
-    width: 100%;
-}
-.header-content{
-    padding: 0;
-    margin: 0;
-    width: 120;
-    display: flex;
-    /* justify-content: center; */
-    /* background-color: aqua; */
+    background-size: cover;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .header-container {
     display: flex;
@@ -19,38 +11,130 @@ body{
     margin: 0;
     padding: 0;
     justify-content: center;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
 }
+
+/* bao quát cả logo và chữ */
+.header-content{
+    padding: 0;
+    margin: 0;
+    width: 1200px;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+/* hình ảnh */
 .header-image{
     width: 30%;
-    /* background-color: aquamarine; */
-    display: inline-block;
-    padding: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10;
 }
-.header-image img{
-    width: 100%;
-}
+
+/* Menu */
 .header-nav{
-    width: 100%;
-    padding: 10px 10px 10px 10px;
-}
-.header-menu{
     display: flex;
-    width: 100%;
     justify-content: space-between;
+    width: calc(70%-20px);
 }
 .header-nav ul{
-    list-style-type: none;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
     padding: 0;
-    /* background-color: aqua; */
-    overflow: hidden;
+    margin: 0;
 }
-/* .header-menu li{
-    width: ;
+/* .header-nav ul li{
+    display: flex;
+    float: left;
 } */
-.header-menu li a{
-    text-decoration: none;
+.dropdownbtn{
+    position: relative;
+}
+.dropdown-select{
+    position: absolute;
+}
+.header-nav ul li ul li{
+    display: inline-block;
+    float: left;
+}
+.header-nav ul li ul li{
+    /* display: none; */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 130px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.header-nav ul li:hover ul .sub-menu{
+    display: block;
+}
+
+#image-1{
+    width: 1600px;
+    display: flex;
+    margin: 0 auto;
+}
+#image-1 img{
+    width: 100%;
+}
+.introduce{
+    margin-top: 84px;
+}
+.introduce-content{
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+.introduce-content img{
+    width: 36%;
+    padding: 24px 24px 24px 24px;
+}
+.introduce-content{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+.P{
+    padding: 35px 0 0 10px;
+}
+.P p{
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.question{
+    width: 1200px;
+    padding: 48px 0 84px 0;
+    margin: 0 auto;
+    justify-content: center;
+}
+.question h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+.frames{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.frame{
+    width: 265px;
+    height: ;
+    border: solid 2px #0b249e;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    text-align: center;
+}
+.frame-content i{
+    color: #0b249e;
+    font-size: 50px;
+}
+.frame-content>h3{
+    font-weight: bold;
+    color: #0b249e;
 }
