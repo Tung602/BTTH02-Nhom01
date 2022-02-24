@@ -53,10 +53,10 @@ body{
 .dropdown-select{
     position: absolute;
 }
-.header-nav ul li ul li{
+/* .header-nav ul li ul li{
     display: inline-block;
     float: left;
-}
+} */
 .header-nav ul li ul li{
     /* display: none; */
     position: absolute;
@@ -118,23 +118,288 @@ body{
 }
 .frames{
     display: flex;
-    justify-content: space-between;
     width: 100%;
 }
 .frame{
-    width: 265px;
-    height: ;
-    border: solid 2px #0b249e;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 400px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.frame-content{
+    border: solid 2px #0b249e;
+    border-radius: 5px;
+    width: 305px;
+    height: 200px;
+    justify-content: center;
     text-align: center;
+    padding: 10px;
 }
 .frame-content i{
     color: #0b249e;
     font-size: 50px;
+    transition: all .2s ease-in-out; 
+}
+.frame-content i:hover { 
+    transform: scale(1.2); 
 }
 .frame-content>h3{
     font-weight: bold;
     color: #0b249e;
+}
+.frame-content p{
+    line-height: 1.8;
+    padding: 0 20px 0 20px;
+}
+
+
+
+.future{
+    width: 100vw;
+    padding: 80px 0 80px 0;
+    display: flex;
+    background-image: linear-gradient(180deg, rgb(2,3,129), rgb(155,81,224));
+    justify-content: center;
+}
+.future-content{
+    width: 1230px;
+    padding: 10px;
+}
+.future-content h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 0 0 40px 0;
+    font-size: 25px;
+}
+.position{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.position-content{
+    width: 287px;
+    padding: 10px;
+    /* background-color: white; */
+}
+.position-content img{
+    width: 283px;
+    height: 188px;
+}
+
+.p-c{
+    padding: 2px;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+}
+.zoom{
+    width: 99%;
+    overflow: hidden;
+}
+.p-c>img{
+    width: 100%;
+}
+.p-c img:hover{
+    transition: all 1s ease;
+    transform: scale(1.1);
+}
+.p-c p{
+    font-weight: bold;
+}
+.p-c:hover{
+    transition: none;
+    font-weight: bold;
+    color: #0b249e;
+}
+
+
+
+.future-introduce{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.future-introduce p{
+    padding: 0 20px 0 20px;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    line-height: 1.8;
+}
+.sign_up{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.future-content button{
+    background-color: #683299;
+    border: solid 3px white;
+    color: white;
+    padding: 13px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.future-content button i{
+    color: white;
+}
+.sign_up_btn:hover{
+    transition: all .1s ease;
+    transform: scale(1.1);
+    background-color: #ffa114;
+}
+
+.object{
+    width: 100vw;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.object h2{
+    padding: 10px 0;
+}
+.object-content{
+    width: 1200px;
+    text-align: center;
+}
+.object_slides{
+    display: flex;
+    justify-content: space-between;
+}
+.slide{
+    width: 380px;
+    border: solid 1px grey;
+}
+.object_slide img{
+    width: 344px;
+    height: 258px;
+    padding: 10px 10px;
+}
+.slide{
+    font-weight: bold;
+}
+
+.f_sign_up{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #0f2bb8;
+}
+.f_sign_up_content{
+    width: 1200px;
+    display: flex;
+    padding: 75px;
+}
+.form_su{
+    text-align: center;
+    width: 50%;
+}
+.form_su h2{
+    color: yellow;
+}
+.form_su h3{
+    color: white;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.form_su input{
+    font-size: 15px;
+    padding-left: 10px;
+    background-color: #ebe7e7;
+    width: 80%;
+    border: none;
+    height: 40px;
+    margin: 7px 0;
+    text-decoration: none;
+}
+::placeholder{
+    color: black;
+}
+.form_su select{
+    background-color: #ebe7e7;
+    border: none;
+    width: 82%;
+    height: 40px;
+    margin: 7px 0;
+}
+#education option{
+    background-color: #ebe7e7;
+    border: solid 1px black;
+    height: 40px;
+    margin: 7px 0;
+    zoom: 1.5;
+    padding: 10px 0;
+}
+.form_su button{
+    margin-top: 20px;
+    background-color: rgba(252,185,0,1);
+    width: 82%;
+    border-radius: 3px;
+    height: 40px;
+}
+
+
+.note{
+    width: 50%;
+    padding: 20px 0 0 90px;
+}
+.note_content_1 i{
+    color: rgb(254,248,76);
+    font-size: 22px;
+    padding: 0 20px;
+}
+.note_content_1 p{
+    font-size: 16px;
+    color: white;
+    display: flex;
+    line-height: 1.8;
+}
+.note_content_2{
+    margin: 0;
+    padding: 4px 0 10px 60px;
+}
+.note_content_2 i{
+    color: rgb(254,248,76);
+    padding-right: 5px;
+}
+.note_content_2 p{
+    font-size: 16px;
+    color: white;
+}
+
+.content_course{
+    width: 100vw;
+    background-color: rgb(238,238,238);
+    display: flex;
+    justify-content: center;
+}
+.content_course_inside{
+    width: 1200px;
+    text-align: center;
+    padding: 84px 0 24px 0;
+}
+.content_course h2{
+    height: 45px;
+    margin: 0 0 20px 0;
+}
+.content_course_inside_left{
+    width: 50%;
+    display: flex;
+    float: left;
+    justify-content: center;
+}
+.content_course_inside_left img{
+    width: 80%;
+}
+.content_course_inside_right{
+    padding: 20px 0 0 20px;
+}
+.content_course_inside_right p{
+    text-align: start;
+    font-size: 16px;
+    padding: 6px 0;
 }
