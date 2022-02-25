@@ -1,0 +1,36 @@
+.header{
+    &-container{
+        margin: 0 auto;
+        width: 73%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-image{
+        padding: 10px;
+        width: 22%;
+    }
+}
+.navigation{
+    flex: 1;
+    &-dropdown-select{
+        margin: 0;
+        padding: 30px 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &-dropdown-list{
+        position: absolute;
+        display: none;
+    }
+    &-dropdown-value a{
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 19.5px;
+    }
+}
+.dropdown-list{
+    position: relative;
+}
