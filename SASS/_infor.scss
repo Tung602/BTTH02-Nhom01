@@ -1,0 +1,61 @@
+.information{
+    & .container{
+        width: 85%;
+        & .row{
+            margin: 80px;
+            & .col-4{
+                padding: 10px 10px;
+                position: relative;
+                & h2{
+                    padding: 30px 0;
+                    color: #0b249e;
+                    font-size: 30px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-align: center;
+                }
+                & p{
+                    font-size: 20px;
+                    font-weight: 700;
+                    text-align: center;
+                    padding-bottom: 50px;
+                }
+                & .information-bar{
+                    width: 1%;
+                    height: 100%;
+                    background-color: #ff7b06;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
+            & .col-8{
+                & p{
+                    padding: 30px 0;
+                    font-size: 21px;
+                    font-style: italic;
+                    font-weight: 600;
+                    color: #433f3f;
+                    line-height: 1.5em;
+                    text-align: center;
+                }                
+                & .information-button{
+                    display: block;
+                    margin: 0 auto;
+                    font-family: "Bai Jamjuree", sans-serif;
+                    font-size: 15px;
+                    padding: 14px 20px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #05a141;
+                    color: white;
+                    transition: transform 0.3s ease;
+                    &:hover{
+                        transform: scale(1.1);
+                        background-color: #da6a06;
+                    }
+                }
+            }
+        }
+    }
+}
