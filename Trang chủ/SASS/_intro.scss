@@ -1,0 +1,37 @@
+.intro{
+    margin-top: 85px;
+    margin-bottom: 65px;
+    & .intro-heading{
+        font-size: 27px;
+        font-weight: 600;
+        line-height: 48.6px;
+        text-align: center;
+    }
+    & .intro-text{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 28.8px;
+        text-align: center;
+    }
+    & .col{
+        display: flex;
+        justify-content: center;
+    }
+    & .card{
+        margin: 20px;
+        width: 345px;
+        align-self:center;
+        & .card-img-top{
+            padding: 19px;
+        }
+        & .card-body{
+            padding-top: 8px;
+        }
+        & .card-text{
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 22.5px;
+        }
+    }
+
+}
