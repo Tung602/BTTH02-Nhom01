@@ -110,9 +110,11 @@
 .sign-up-form .container-fluid .infor-container {
   display: flex;
   justify-content: center;
+  padding-top: 50px;
 }
 .sign-up-form .container-fluid .infor-container .row {
   width: 85%;
+  height: 100%;
 }
 .sign-up-form .container-fluid .infor-container .row .infor {
   position: relative;
@@ -197,7 +199,7 @@
   border: none;
   background-color: #05a141;
   color: white;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 .information .container .row .col-8 .information-button:hover {
   transform: scale(1.1);
@@ -382,7 +384,7 @@
   font-weight: 600;
   margin-top: 60px;
   margin-bottom: 95px;
-  transition: transform 0.3s ease;
+  transition: all 0.3s ease;
 }
 .about-submit-btn:hover {
   transform: scale(1.1);
